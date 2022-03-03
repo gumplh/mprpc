@@ -1,0 +1,9 @@
+/home/lighthouse/git/mprpc/build/CMakeFiles/rebuild_cache.dir
+/home/lighthouse/git/mprpc/build/CMakeFiles/edit_cache.dir
+/home/lighthouse/git/mprpc/build/src/CMakeFiles/rebuild_cache.dir
+/home/lighthouse/git/mprpc/build/src/CMakeFiles/edit_cache.dir
+/home/lighthouse/git/mprpc/build/example/CMakeFiles/rebuild_cache.dir
+/home/lighthouse/git/mprpc/build/example/CMakeFiles/edit_cache.dir
+/home/lighthouse/git/mprpc/build/example/callee/CMakeFiles/rebuild_cache.dir
+/home/lighthouse/git/mprpc/build/example/callee/CMakeFiles/provider.dir
+/home/lighthouse/git/mprpc/build/example/callee/CMakeFiles/edit_cache.dir

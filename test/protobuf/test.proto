@@ -1,0 +1,48 @@
+syntax = "proto3"; //声明protobuf的版本
+
+package fixbug; //声明代码所在的包
+//可以消息类型嵌套实现结构体类型的嵌套，如果有嵌套，需要一个mutable_result对象指针去操作对象
+//数据类型：：列表(类型前面加上repeated)，整数，bytes，映射表map
+// 定义下面的选项，表示生成service服务类和rpc方法
+option cc_generic_services = true;
+
+message ResultCode{
+    int32 errcode = 1;
+    bytes errmsg = 2;
+}
+
+message LoginRequest{
+    bytes name = 1; //使用bytes存储数据节省空间
+    bytes pwd = 2;
+}
+
+message LoginReponse{
+    ResultCode result = 1;
+    bool success = 2;
+}
+
+message UserInfo{
+    int32 id = 1;
+    int32 age = 2;
+    enum Sex
+    {
+        MAN = 0;
+        WOMAN = 1;
+    }
+    Sex sex = 3;
+}
+
+message GetFriendRequest{
+    int32 id = 1;
+}
+
+message GetFriendReponse{
+    ResultCode result = 1;
+    repeated UserInfo frient_list = 2;
+}
+
+//在protobuf定义描述rpc方法的类型 - service
+service UserServiceRpc{
+    rpc Login(LoginRequest) returns(LoginReponse);
+    rpc GetFriendLists(GetFriendRequest) returns(GetFriendReponse);
+}
