@@ -84,3 +84,12 @@ rpc框架基于网络传输和数据格式转化。网络库选择muduo，数据
 - doozer在项目开展之后停滞了一段时间，不知道项目的发展状态，也不知道是否稳定。因此没有使用doozer。
 - etcd：client和etcd网络通信时的一些交互不是那么友好。主要体现在两点，第一点是在leader选举时，etcd会放弃操作，并且不会给client发送放弃响应。第二点是如果client和etcd网络中断，client不会明确的知道当前的操作状态。因此没有使用etcd。
 - zookeeper因为是一直以来比较稳定，没有什么明显的缺点，因此使用zookeeper。
+
+# 调试方法
+1. 在顶层CMakeLists.txt文件中设置cmake_build_type为Debug模式
+2. 生成进程之后使用命令：gdb ./provider
+3. 打断点，run 加参数，直接跑到断点处
+4. bt 查看栈帧（调用过程）, l 查看周围代码， n 执行下一步， p 查看变量
+
+# rpc流程
+服务注册

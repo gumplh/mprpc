@@ -110,6 +110,156 @@ depend:
 	cd /home/lighthouse/git/mprpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/CMakeFiles/mprpc.dir/rule:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mprpc.dir/rule
+.PHONY : src/CMakeFiles/mprpc.dir/rule
+
+# Convenience name for target.
+mprpc: src/CMakeFiles/mprpc.dir/rule
+
+.PHONY : mprpc
+
+# fast build rule for target.
+mprpc/fast:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
+.PHONY : mprpc/fast
+
+mprpcapplication.o: mprpcapplication.cc.o
+
+.PHONY : mprpcapplication.o
+
+# target to build an object file
+mprpcapplication.cc.o:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o
+.PHONY : mprpcapplication.cc.o
+
+mprpcapplication.i: mprpcapplication.cc.i
+
+.PHONY : mprpcapplication.i
+
+# target to preprocess a source file
+mprpcapplication.cc.i:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcapplication.cc.i
+.PHONY : mprpcapplication.cc.i
+
+mprpcapplication.s: mprpcapplication.cc.s
+
+.PHONY : mprpcapplication.s
+
+# target to generate assembly for a file
+mprpcapplication.cc.s:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcapplication.cc.s
+.PHONY : mprpcapplication.cc.s
+
+mprpcconfig.o: mprpcconfig.cc.o
+
+.PHONY : mprpcconfig.o
+
+# target to build an object file
+mprpcconfig.cc.o:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o
+.PHONY : mprpcconfig.cc.o
+
+mprpcconfig.i: mprpcconfig.cc.i
+
+.PHONY : mprpcconfig.i
+
+# target to preprocess a source file
+mprpcconfig.cc.i:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcconfig.cc.i
+.PHONY : mprpcconfig.cc.i
+
+mprpcconfig.s: mprpcconfig.cc.s
+
+.PHONY : mprpcconfig.s
+
+# target to generate assembly for a file
+mprpcconfig.cc.s:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcconfig.cc.s
+.PHONY : mprpcconfig.cc.s
+
+rpcheader.pb.o: rpcheader.pb.cc.o
+
+.PHONY : rpcheader.pb.o
+
+# target to build an object file
+rpcheader.pb.cc.o:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o
+.PHONY : rpcheader.pb.cc.o
+
+rpcheader.pb.i: rpcheader.pb.cc.i
+
+.PHONY : rpcheader.pb.i
+
+# target to preprocess a source file
+rpcheader.pb.cc.i:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.i
+.PHONY : rpcheader.pb.cc.i
+
+rpcheader.pb.s: rpcheader.pb.cc.s
+
+.PHONY : rpcheader.pb.s
+
+# target to generate assembly for a file
+rpcheader.pb.cc.s:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.s
+.PHONY : rpcheader.pb.cc.s
+
+rpcprovider.o: rpcprovider.cc.o
+
+.PHONY : rpcprovider.o
+
+# target to build an object file
+rpcprovider.cc.o:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcprovider.cc.o
+.PHONY : rpcprovider.cc.o
+
+rpcprovider.i: rpcprovider.cc.i
+
+.PHONY : rpcprovider.i
+
+# target to preprocess a source file
+rpcprovider.cc.i:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcprovider.cc.i
+.PHONY : rpcprovider.cc.i
+
+rpcprovider.s: rpcprovider.cc.s
+
+.PHONY : rpcprovider.s
+
+# target to generate assembly for a file
+rpcprovider.cc.s:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcprovider.cc.s
+.PHONY : rpcprovider.cc.s
+
+util.o: util.cc.o
+
+.PHONY : util.o
+
+# target to build an object file
+util.cc.o:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/util.cc.o
+.PHONY : util.cc.o
+
+util.i: util.cc.i
+
+.PHONY : util.i
+
+# target to preprocess a source file
+util.cc.i:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/util.cc.i
+.PHONY : util.cc.i
+
+util.s: util.cc.s
+
+.PHONY : util.s
+
+# target to generate assembly for a file
+util.cc.s:
+	cd /home/lighthouse/git/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/util.cc.s
+.PHONY : util.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -117,7 +267,23 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... mprpc"
 	@echo "... edit_cache"
+	@echo "... mprpcapplication.o"
+	@echo "... mprpcapplication.i"
+	@echo "... mprpcapplication.s"
+	@echo "... mprpcconfig.o"
+	@echo "... mprpcconfig.i"
+	@echo "... mprpcconfig.s"
+	@echo "... rpcheader.pb.o"
+	@echo "... rpcheader.pb.i"
+	@echo "... rpcheader.pb.s"
+	@echo "... rpcprovider.o"
+	@echo "... rpcprovider.i"
+	@echo "... rpcprovider.s"
+	@echo "... util.o"
+	@echo "... util.i"
+	@echo "... util.s"
 .PHONY : help
 
 

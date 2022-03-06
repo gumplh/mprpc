@@ -6,4 +6,7 @@ example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o
  /home/lighthouse/git/mprpc/example/user.pb.h
 example/callee/CMakeFiles/provider.dir/userservice.cc.o
  ../example/user.pb.h
+ ../src/include/mprpcapplication.h
+ ../src/include/mprpcconfig.h
+ ../src/include/rpcprovider.h
  /home/lighthouse/git/mprpc/example/callee/userservice.cc
